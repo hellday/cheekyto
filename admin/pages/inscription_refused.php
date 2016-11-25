@@ -7,25 +7,22 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$req = $bdd->query('SELECT * FROM inscription_refused');
+$req = $bdd->query('SELECT * FROM inscriptions WHERE status = "refused"');
 
 //On récupère l'ID de l'inscription précedemment refusée à valider
 if ((isset($_GET["id"]) && !empty($_GET["id"])) ) {
 
-    $reponse = $bdd->prepare('SELECT * FROM inscription_refused WHERE id = ? ');
+    $reponse = $bdd->prepare('SELECT * FROM inscriptions WHERE id = ? ');
     $reponse->execute(array($_GET["id"]));
 
     //On vérifie que cet id existe
     if($donnees = $reponse->fetch()) {
 
-        $id = $_GET["id"];
-
-        //On copie l'inscription dans la partie validé
-        $reqsql = $bdd->prepare('INSERT INTO inscription_validated SELECT * FROM inscription_refused WHERE id = ? ');
-        $reqsql->execute(array($_GET['id']));
-        //On supprime celle qui était en attente
-        $reqdel = $bdd->prepare('DELETE FROM inscription_refused WHERE id = ? ');
-        $reqdel->execute(array($_GET['id']));
+        $reqsql = $bdd->prepare('UPDATE inscriptions SET status = :status WHERE id = :id');
+        $reqsql->execute(array(
+            'status' => "validated",
+            'id' => $_GET["id"]
+        ));
 
         header("Location: inscription_refused.php?val");
 

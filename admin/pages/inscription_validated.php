@@ -7,7 +7,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$req = $bdd->query('SELECT * FROM inscription_validated');
+$req = $bdd->query('SELECT * FROM inscriptions WHERE status = "validated"');
 
 
 

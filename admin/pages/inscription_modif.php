@@ -7,7 +7,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$req = $bdd->prepare('SELECT * FROM inscription_validated WHERE id = ? ');
+$req = $bdd->prepare('SELECT * FROM inscriptions WHERE id = ? ');
 $req->execute(array($_GET["id"]));
 
 if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
@@ -19,7 +19,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
     $email = $_POST['email'];
     $adresse = $_POST['adresse'];
 
-    $reqsql = $bdd->prepare('UPDATE inscription_validated SET civilité = :civilite, date_naissance = :datenaissance, nom = :nom, prénom = :prenom, email = :email, adresse = :adresse WHERE id = :id');
+    $reqsql = $bdd->prepare('UPDATE inscriptions SET civilité = :civilite, date_naissance = :datenaissance, nom = :nom, prénom = :prenom, email = :email, adresse = :adresse WHERE id = :id');
     $reqsql->execute(array(
         'civilite' => $civilite,
         'datenaissance' => $date,

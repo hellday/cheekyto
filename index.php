@@ -16,14 +16,25 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 		die('Erreur : ' . $e->getMessage());
 	}
 
-	$reqsql = $bdd->prepare('INSERT INTO inscription_wait (civilité, date_naissance, nom, prénom, email, adresse ) VALUES (:civilite, :datenaissance, :nom, :prenom, :email, :adresse)');
+//	$reqsql = $bdd->prepare('INSERT INTO inscription_wait (civilité, date_naissance, nom, prénom, email, adresse ) VALUES (:civilite, :datenaissance, :nom, :prenom, :email, :adresse)');
+//	$reqsql->execute(array(
+//			'civilite' => $civilite,
+//			'datenaissance' => $date,
+//			'nom' => $nom,
+//			'prenom' => $prenom,
+//			'email' => $email,
+//			'adresse' => $adresse
+//	));
+
+	$reqsql = $bdd->prepare('INSERT INTO inscriptions (civilité, date_naissance, nom, prénom, email, adresse, status ) VALUES (:civilite, :datenaissance, :nom, :prenom, :email, :adresse, :status)');
 	$reqsql->execute(array(
-			'civilite' => $civilite,
-			'datenaissance' => $date,
-			'nom' => $nom,
-			'prenom' => $prenom,
-			'email' => $email,
-			'adresse' => $adresse
+		'civilite' => $civilite,
+		'datenaissance' => $date,
+		'nom' => $nom,
+		'prenom' => $prenom,
+		'email' => $email,
+		'adresse' => $adresse,
+		'status' => "wait"
 	));
 
 

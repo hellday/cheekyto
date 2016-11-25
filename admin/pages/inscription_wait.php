@@ -7,27 +7,24 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-$req = $bdd->query('SELECT * FROM inscription_wait');
+$req = $bdd->query('SELECT * FROM inscriptions WHERE status = "wait"');
 
 
 
 //On récupère l'ID de l'inscription à valider
 if ((isset($_GET["id"]) && !empty($_GET["id"])) ) {
 
-    $reponse = $bdd->prepare('SELECT * FROM inscription_wait WHERE id = ? ');
+    $reponse = $bdd->prepare('SELECT * FROM inscriptions WHERE id = ? ');
     $reponse->execute(array($_GET["id"]));
 
     //On vérifie que cet id existe
     if($donnees = $reponse->fetch()) {
 
-        $id = $_GET["id"];
-
-        //On copie l'inscription dans la partie validé
-        $reqsql = $bdd->prepare('INSERT INTO inscription_validated SELECT * FROM inscription_wait WHERE id = ? ');
-        $reqsql->execute(array($_GET['id']));
-        //On supprime celle qui était en attente
-        $reqdel = $bdd->prepare('DELETE FROM inscription_wait WHERE id = ? ');
-        $reqdel->execute(array($_GET['id']));
+        $reqsql = $bdd->prepare('UPDATE inscriptions SET status = :status WHERE id = :id');
+        $reqsql->execute(array(
+            'status' => "validated",
+            'id' => $_GET["id"]
+        ));
 
         header("Location: inscription_wait.php?val");
 
@@ -37,20 +34,17 @@ if ((isset($_GET["id"]) && !empty($_GET["id"])) ) {
 //On récupère l'ID de l'inscription à refuser
 if ((isset($_GET["id2"]) && !empty($_GET["id2"])) ) {
 
-    $reponse = $bdd->prepare('SELECT * FROM inscription_wait WHERE id = ? ');
+    $reponse = $bdd->prepare('SELECT * FROM inscriptions WHERE id = ? ');
     $reponse->execute(array($_GET["id2"]));
 
     //On vérifie que cet id existe
     if($donnees = $reponse->fetch()) {
 
-        $id = $_GET["id2"];
-
-        //On copie l'inscription dans la partie validé
-        $reqsql = $bdd->prepare('INSERT INTO inscription_refused SELECT * FROM inscription_wait WHERE id = ? ');
-        $reqsql->execute(array($_GET['id2']));
-        //On supprime celle qui était en attente
-        $reqdel = $bdd->prepare('DELETE FROM inscription_wait WHERE id = ? ');
-        $reqdel->execute(array($_GET['id2']));
+        $reqsql = $bdd->prepare('UPDATE inscriptions SET status = :status WHERE id = :id');
+        $reqsql->execute(array(
+            'status' => "refused",
+            'id' => $_GET["id2"]
+        ));
 
         header("Location: inscription_wait.php?ref");
 
