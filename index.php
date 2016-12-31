@@ -70,42 +70,9 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 
 	</head>
 	<body>
-		<header id="header">
-			<div id="menu" class="header-menu fixed">
-				<div class="box">
-					<div class="row">
-						<nav role="navigation" class="col-sm-12">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
 
-								<!--== Logo ==-->
-								<span class="navbar-brand logo">
-									Cheekyto
-								</span>
+    <?php include "header.php"; ?>
 
-							</div>
-							<div class="navbar-collapse collapse">
-
-								<!--== Navigation Menu ==-->
-								<ul class="nav navbar-nav">
-									<li class="current"><a href="#header">Accueil</a></li>
-									<li><a href="#about">A propos</a></li>
-									<li><a href="#schedule">Inscription</a></li>
-									<li><a href="#blog">Blog</a></li>
-									<li><a href="#team">La bande</a></li>
-									<li><a href="#testimonial">Testimonials</a></li>
-									<li><a href="#contact">Inscription</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
 
 			<!--== Site Description ==-->
 			<div class="header-cta">
@@ -553,111 +520,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					  </div>
 					</div>
 				</section>
-				<!--==========-->
-				<!--===============================-->
-				<!--== Pricing Tables =============-->
-				<!--===============================-->
-				<!--<section id="prices" class="row">-->
-				<!--<div class="title-start events-menu col-md-4 col-md-offset-4">-->
-				<!--<h2>Pricing</h2>-->
-				<!--<p class="sub-text text-center">Details of our reasonable pricing</p>-->
-				<!--</div>-->
 
-				<!--<div class="col-md-12 visible-md visible-lg">-->
-					<!--<div class="wrap">-->
-					<!---->
-						<!--<div class="pricing-table">-->
-							<!--<div class="plan">-->
-								<!--<h3 class="name">Silver</h3>-->
-								<!--<h4 class="price">$10,000<span>/Day</span></h4>-->
-
-								<!--<ul class="details">-->
-									<!--<li><strong>100</strong> Seats</li>-->
-									<!--<li><strong>3 Star</strong> Hotel</li>-->
-									<!--<li><strong>Gifts</strong></li>-->
-								<!--</ul>-->
-
-								<!--<h5 class="order"><a href="#">Order Now</a></h5>-->
-							<!--</div>&lt;!&ndash;.plan&ndash;&gt;-->
-
-							<!--<div class="plan">-->
-								<!--<h3 class="name">Gold</h3>-->
-								<!--<h4 class="price">$20,000<span>/Day</span></h4>-->
-
-								<!--<ul class="details">-->
-									<!--<li><strong>300</strong> Seats</li>-->
-									<!--<li><strong>5 Star</strong> Hotel</li>-->
-									<!--<li><strong>Gifts</strong></li>-->
-								<!--</ul>-->
-
-								<!--<h5 class="order"><a href="#">Order Now</a></h5>-->
-							<!--</div>&lt;!&ndash;.plan&ndash;&gt;-->
-
-							<!--<div class="plan">-->
-								<!--<h3 class="name">Platinum</h3>-->
-								<!--<h4 class="price">$30,000<span>/Day</span></h4>-->
-
-								<!--<ul class="details">-->
-									<!--<li><strong>500</strong> Seats</li>-->
-									<!--<li><strong>7 Star</strong> Hotel</li>-->
-									<!--<li><strong>Gifts</strong></li>-->
-								<!--</ul>-->
-
-								<!--<h5 class="order"><a href="#">Order Now</a></h5>-->
-							<!--</div>&lt;!&ndash;.plan&ndash;&gt;-->
-						<!--</div>&lt;!&ndash;.pricing-table&ndash;&gt;-->
-					<!--</div>&lt;!&ndash;.wrap&ndash;&gt;-->
-					<!--</div>-->
-
-						<!--<div class="col-sm-11  pricing-table visible-sm visible-xs">-->
-					       <!--<div class="plan">-->
-								<!--<h3 class="name">Silver</h3>-->
-								<!--<h4 class="price">$10,000<span>/Day</span></h4>-->
-
-								<!--<ul class="details">-->
-									<!--<li><strong>100</strong> Seats</li>-->
-									<!--<li><strong>3 Star</strong> Hotel</li>-->
-									<!--<li><strong>Gifts</strong></li>-->
-								<!--</ul>-->
-
-								<!--<h5 class="order"><a href="#">Order Now</a></h5>-->
-							<!--</div>&lt;!&ndash;.plan&ndash;&gt;-->
-						<!--</div>	-->
-						<!--<div class="col-sm-11  pricing-table visible-sm visible-xs">-->
-					       <!--<div class="plan">-->
-								<!--<h3 class="name">Gold</h3>-->
-								<!--<h4 class="price">$20,000<span>/Day</span></h4>-->
-
-								<!--<ul class="details">-->
-									<!--<li><strong>100</strong> Seats</li>-->
-									<!--<li><strong>5 Star</strong> Hotel</li>-->
-									<!--<li><strong>Gifts</strong></li>-->
-								<!--</ul>-->
-
-								<!--<h5 class="order"><a href="#">Order Now</a></h5>-->
-							<!--</div>&lt;!&ndash;.plan&ndash;&gt;-->
-						<!--</div>-->
-						<!--<div class="col-sm-11  pricing-table visible-sm visible-xs">-->
-
-							<!--<div class="plan">-->
-								<!--<h3 class="name">Platinum</h3>-->
-								<!--<h4 class="price">$30,000<span>/Day</span></h4>-->
-
-								<!--<ul class="details">-->
-									<!--<li><strong>500</strong> Seats</li>-->
-									<!--<li><strong>7 Star</strong> Hotel</li>-->
-									<!--<li><strong>Gifts</strong></li>-->
-								<!--</ul>-->
-
-								<!--<h5 class="order"><a href="#">Order Now</a></h5>-->
-							<!--</div>&lt;!&ndash;.plan&ndash;&gt;-->
-
-						<!--</div>	-->
-				<!--</section>-->
-				<!--==========-->
-
-
-				</div></div>
 				<!--==========-->
 				<!--==========-->
 				<!--===============================-->
@@ -665,135 +528,32 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 				<!--===============================-->
 		<section id="testimonial" class="testimonial-area">
             <div class="container">
-                <div class="title-start col-md-4 col-md-offset-4">
-					<h2 class="team-heading white">Testimonial</h2>
-					<p class="sub-text text-center">What they say and see among us</p>
-				</div>
+
                 <div class="row">
                     <div class="col-xs-12">
                     </div>
                     <div id="testimonial-container" class="col-xs-12">
                         <div class="testimonila-block">
-                            <img src="images/testimonial.jpg" alt="clients" class="selfshot">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
-                            <strong>Monir Hossain</strong>
-                            <br>
-                            <small>C.E.O</small>
+                            <img src="images/inrock.png" alt="clients" class="selfshot">
+                            <p>"Incontournable,le festival de l'année"</p>
+                            <strong>Les Inrocks</strong>
                         </div>
                         <div class="testimonila-block">
-                            <img src="images/testimonial2.jpg" alt="clients" class="selfshot">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
-                            <strong>Nur Ul Hossain</strong>
-                            <br>
-                            <small>Project Manager</small>
+                            <img src="images/lep.jpg" alt="clients" class="selfshot">
+                            <p>"Incroyablement créatif,le Caochella à la française"</p>
+                            <strong>Le point</strong>
                         </div>
-                        <div class="testimonila-block">
-                            <img src="images/testimonial3.jpg" alt="clients" class="selfshot">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
-                            <strong>Rub Elvi</strong>
-                            <br>
-                            <small>Developer</small>
-                        </div>
+
                     </div>
                 </div>
             </div><!-- container -->
         </section><!-- testimonial -->
-				
-
-		</div>
-		 <!-- Contact Area -->
-
-        <section id="contact" class="mapWrap">
-            <div id="googleMap" style="width:100%;"></div>
-            <div id="contact-area">
-                <div class="container">
-                    <h2 class="block_title">Cheekyto</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="moreDetails">
-                                <h2 class="con-title">Inscription</h2>
-                                <p> Inscrivez-vous pour participer à notre concert privé !</p>
-								<p> L'adresse de celui-ci vous sera communiqué sur votre boite mail.</p>
-                                <!--<ul class="address">-->
-                                    <!--<li><i class="pe-7s-map-marker"></i><span>1600 Pennsylvania Ave NW,<br>Washington, DC 20500,<br>United States</span></li>-->
-                                    <!--<li><i class="pe-7s-mail"></i><span>example@gmail.com</span></li>-->
-                                    <!--<li><i class="pe-7s-phone"></i><span>+1-202-555-0144</span></li>-->
-                                    <!--<li><i class="pe-7s-global"></i><span><a href="#">www.themewagon.com</a></span></li>-->
-                                <!--</ul>-->
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h2 class="con-title">Inscrivez-vous !</h2>
-							<form method="POST" action="">
-
-								<div class="form-group">
-									<label for="civilité">Civilité :
-									<select class="form-control" id="civilité" name="civilité">
-										<option>Madame</option>
-										<option>Monsieur</option>
-									</select></label>
-								</div>
-								<div class="form-group">
-									<label for="date">Date de naissance</label>
-									<input type="date" class="form-control" placeholder="Votre adresse" id="date" name="date" required="true">
-
-								</div>
-                              <div class="form-group" >
-                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required="true">
-                              </div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prénom" required="true">
-								</div>
-                              <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required="true">
-                              </div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="adresse" name="adresse" placeholder="Votre adresse" required="true">
-								</div>
-
-                              <button type="submit" class="btn medium">Envoyer</button
-								<br><br><br>
-                            </form>
-                        </div>
-                    </div>
-                </div><!-- container -->
 
 
 
-            </div><!-- contact-area -->
-			<div class="content mcontent">
-				<div id="gotop" class="gotop fa fa-arrow-up"></div>
-			</div>
-            <div id="social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="scoialinks">
-                                <li class="normal-txt">Retrouvez-nous</li>
-                                <li class="social-icons"><a class="facebook" href="#"></a></li>
-                                <li class="social-icons"><a class="twitter" href="#"></a></li>
-                                <li class="social-icons"><a class="linkedin" href="#"></a></li>
-                                <li class="social-icons"><a class="google-plus" href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- social -->
-        </section><!-- contact -->
-		<footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2016</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="designed">By <a href="http://themewagon.com" target="_blank">Cheekyto</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                <?php include "footer.php"; ?>
+
+
 
 
 		<!--== Javascript Files ==-->
