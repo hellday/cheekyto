@@ -80,7 +80,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					<div class="row">
 						<div class="entry-content">
 				            <p><span class="start-text"><b>26 Juin 2017</b></span></p>
-				            <h4 class="entry-title"><a href="#">Festival Privé</a></h4>
+				            <h4 class="entry-title"><a href="#">Le Festival Privé Parisien</a></h4>
 
 				            <h5><span><b>Remplissez le formulaire d'inscription et rejoignez LE festival </b></span></h5>
 					    </div>
@@ -132,106 +132,25 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 				<div class="content-block">
 					<i class="fa fa-beer fa-3x"></i>
 					<h3>Une Ambiance de fête</h3>
-					<p>Profitez des différentes infrastructure mise en Place,pour profiter de la fêtes au maximum.</p>
+					<p>différentes infrastructure mise en Place,pour profiter de la fêtes au maximum.</p>
 				</div>
 			</div>
 			<div class="block col-md-4">
 				<div class="content-block">
 					<i class="fa fa-map fa-3x"></i>
-					<h3>Un lieux Unique au coeur de Paris</h3>
+					<h3>Un lieux unique au coeur de Paris</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.368694288325!2d2.2863701155270806!3d48.851179409168644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701b487a1783%3A0x79f04230918a64c6!2s10+Rue+Sextius+Michel%2C+75015+Paris!5e0!3m2!1sfr!2sfr!4v1483195920369" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             </div>
 			</div>
 			<div class="about-part">
 			<div class="col-md-12">
-			
-				<h3>Qui sommes nous ?</h3>
-				
-
-				<p>Créé par deux étudiants, Cheekyto est un festival de musique électronique dans un premier lieux qui a pour but de mettre en valeur la scène électronique française avec des grands nom de la musique mais aussi des découvertes et des surprises pour un public grandissant  </p>
+                <center><p>Créé par deux étudiants parisiens, Cheekyto est un festival de musique électronique dans un premier lieux qui a pour but de mettre en valeur la scène électronique française avec des grands noms de la musique mais aussi des découvertes et des surprises pour un public grandissant. <br>
+                    </p></center>
 			</div>
 
 
 		</section>
-				<!--==========-->
-				<!--===============================-->
-				<!--== Team =============-->
-				<!--===============================-->
-
-				<section id="team" class="team">
-					<div class="container">
-						<div class="title-start team-menu col-md-4 col-md-offset-4">
-							<h2 class="team-heading">les plus grand?</h2>
-							<p class="sub-text text-center">Meet the greatest Team of Themewagon</p>
-						</div>
-					</div>
-					<div class="team-member row">
-						<div class="col-md-3 col-sm-6 member">
-							<img class="blog-image" src="images/team1.jpg" width="100%" height="280" alt="Blog Image 2"/>
-							<p class="name-member">Jon Doe, CEO</p>
-							<ul class="team-ist">
-								<li>CSS3 </li>
-								<li>HTML5 </li>
-								<li>Adobe</li>
-							</ul>
-							<div class="team-social">
-								<i class="fa fa-2x fa-tumblr-square"></i>
-								<i class="fa fa-2x fa-facebook"></i>
-								<i class="fa fa-2x fa-twitter"></i>
-								<i class="fa fa-2x fa-linkedin"></i>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 member">
-							<img class="blog-image" src="images/team2.jpg" width="100%" height="280" alt="Blog Image 2"/>
-							<p class="name-member">Jon Doe, Head of Ideas</p>
-							<ul class="team-ist">
-								<li>CSS3 </li>
-								<li>HTML5 </li>
-								<li>Adobe</li>
-							</ul>
-							<div class="team-social">
-								<i class="fa fa-2x fa-tumblr-square"></i>
-								<i class="fa fa-2x fa-facebook"></i>
-								<i class="fa fa-2x fa-twitter"></i>
-								<i class="fa fa-2x fa-linkedin"></i>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 member">
-							<img class="blog-image" src="images/team3.jpg" width="100%" height="280" alt="Blog Image 2"/>
-							<p class="name-member">Jon Doe, Chief Developer</p>
-							<ul class="team-ist">
-								<li>CSS3 </li>
-								<li>HTML5 </li>
-								<li>Adobe</li>
-							</ul>
-							<div class="team-social">
-								<i class="fa fa-2x fa-tumblr-square"></i>
-								<i class="fa fa-2x fa-facebook"></i>
-								<i class="fa fa-2x fa-twitter"></i>
-								<i class="fa fa-2x fa-linkedin"></i>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 member">
-							<img class="blog-image" src="images/team4.jpg" width="100%" height="280" alt="Blog Image 2"/>
-							<p class="name-member">Jon Doe, Event Manager</p>
-							<ul class="team-ist">
-								<li>CSS3 </li>
-								<li>HTML5 </li>
-								<li>Adobe</li>
-							</ul>
-							<div class="team-social">
-								<i class="fa fa-2x fa-tumblr-square"></i>
-								<i class="fa fa-2x fa-facebook"></i>
-								<i class="fa fa-2x fa-twitter"></i>
-								<i class="fa fa-2x fa-linkedin"></i>
-							</div>
-						</div>
-					</div>
-
-				</section>
-				<!--==========-->
-
 
 
 				<!--===============================-->
@@ -250,7 +169,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					        </div>
 					        <div class="timeline-panel">
 					            <div class="timeline-heading">
-					                <h4>Event One</h4>
+					                <h4>1 er</h4>
 					            </div>
 					            <div class="timeline-body">
 					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
@@ -459,47 +378,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 
 
 
-				<!--===============================-->
-				<!--== Blog =============-->
-				<!--===============================-->
-			<section id="blog" class="row">
-				<div class="title-start col-md-4 col-md-offset-4"><h2>Blog</h2>	
-				<p class="sub-text text-center">Awesome news and articles from us</p>	
-				</div>
-					<div class="top">
-					</div>
-					<div class="content">
-					  
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">Evento at HW</h2>
-					    <h3>
-					    Posted by <a href="#">Shuvo</a><span class="date-line"> on April 1st</span>
-					    </h3>
-					    <img class="blog-image" src="images/demo/blog2.jpg" width="100%" height="250" alt="Blog Image 2"/>
-					    
-					    <p class="firstpara"><span class="firstcharacter">P</span>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
 
-					    <button class="button-info read-more">Read More</button>
-					     
-					  </div>
-					
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">Evento at NY</h2>
-					    <h3>Posted by <a href="#">Shuvo</a><span class="date-line"> on April 30th</span></h3>
-					    <img class="blog-image" src="images/demo/blog1.jpg"  width="100%" height="250" alt="Blog Image 2"/>
-					    <p class="firstpara"><span class="firstcharacter">G</span>et out of here!" bellowed a brawny man with a beard as long as Charlie's arm. "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante."Pellentesque habitant morbi tristique." said Charlie.Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					    <button class="button-info read-more">Read More</button>
-					  </div>
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">US Feast</h2>
-
-					    <h3>Posted by <a href="#">Shuvo</a><span class="date-line"> on April 1st</span></h3>
-					    <img class="blog-image" src="images/demo/blog2.jpg" width="100%" height="250" alt="Blog Image 2"/>
-					    <p class="firstpara"><span class="firstcharacter">P</span>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					    <button class="button-info read-more">Read More</button>
-					  </div>
-					</div>
-				</section>
 
 				<!--==========-->
 				<!--==========-->

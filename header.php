@@ -23,9 +23,8 @@
                     <ul class="nav navbar-nav">
                         <li class="current"><a href="#header">Accueil</a></li>
                         <li><a href="index.php#about">A propos</a></li>
-                        <li><a href="index.php#blog">Blog</a></li>
-                        <li><a href="index.php#team">La bande</a></li>
-                        <li><a href="index.php#testimonial">Testimonials</a></li>
+                        <li><a href="index.php#schedule">Au programme</a></li>
+                        <li><a href="index.php#testimonial">Avis</a></li>
                         <li><a href="inscription.php">Inscription</a></li>
                     </ul>
                 </div>
