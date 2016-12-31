@@ -82,7 +82,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 				            <p><span class="start-text"><b>26 Juin 2017</b></span></p>
 				            <h4 class="entry-title"><a href="#">Festival Privé</a></h4>
 
-				            <h5><span><b>Remplissez le formulaire d'inscription</b></span></h5>
+				            <h5><span><b>Remplissez le formulaire d'inscription et rejoignez LE festival </b></span></h5>
 					    </div>
 					</div>
 				</div>
@@ -104,7 +104,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 
 				</div>
 			</div>
-		</header>
+
 
 		<div class="content">
 			<div class="container box">
@@ -131,47 +131,27 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 			<div class="block col-md-4">
 				<div class="content-block">
 					<i class="fa fa-beer fa-3x"></i>
-					<h3>Bars</h3>
-					<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h3>Une Ambiance de fête</h3>
+					<p>Profitez des différentes infrastructure mise en Place,pour profiter de la fêtes au maximum.</p>
 				</div>
 			</div>
 			<div class="block col-md-4">
 				<div class="content-block">
-					<i class="fa fa-trophy fa-3x"></i>
-					<h3>Award Winning Company</h3>
-					<p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
+					<i class="fa fa-map fa-3x"></i>
+					<h3>Un lieux Unique au coeur de Paris</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.368694288325!2d2.2863701155270806!3d48.851179409168644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701b487a1783%3A0x79f04230918a64c6!2s10+Rue+Sextius+Michel%2C+75015+Paris!5e0!3m2!1sfr!2sfr!4v1483195920369" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            </div>
 			</div>
 			<div class="about-part">
-			<div class="col-md-8">
+			<div class="col-md-12">
 			
 				<h3>Qui sommes nous ?</h3>
 				
 
-				<p>Nullam enim nunc, sollicitudin eget rhoncus non, iaculis quis metus. Nunc urna diam, blandit nec ipsum eu, mollis convallis lectus. Vestibulum sapien mauris, auctor quis magna sed, pretium vestibulum est. Mauris vitae tristique urna. Nullam enim nunc, sollicitudin eget rhoncus non, iaculis quis metus. Nunc urna diam, blandit nec ipsum eu, mollis convallis lectus.
+				<p>Créé par deux étudiants, Cheekyto est un festival de musique électronique dans un premier lieux qui a pour but de mettre en valeur la scène électronique française avec des grands nom de la musique mais aussi des découvertes et des surprises pour un public grandissant  </p>
+			</div>
 
-				Vestibulum sapien mauris, auctor quis magna sed, pretium vestibulum est. Mauris vitae tristique urna.</p>
-			</div>
-			<div class="col-md-4">
-
-				<p> Design</p>
-				<div class="progress">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-				    60%
-				  </div>
-				</div>
-				<br/>
-				<p> Idea</p>
-				<div class="progress">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-				    80%
-				  </div>
-				</div>
-				<br/>
-			</div>
-			</div>
-			</div>
 
 		</section>
 				<!--==========-->
@@ -182,7 +162,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 				<section id="team" class="team">
 					<div class="container">
 						<div class="title-start team-menu col-md-4 col-md-offset-4">
-							<h2 class="team-heading">La bande</h2>
+							<h2 class="team-heading">les plus grand?</h2>
 							<p class="sub-text text-center">Meet the greatest Team of Themewagon</p>
 						</div>
 					</div>

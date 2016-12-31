@@ -90,7 +90,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
                         <div class="moreDetails">
                             <h2 class="con-title">Inscription</h2>
                             <p> Inscrivez-vous pour participer à notre concert privé !</p>
-                            <p> L'adresse de celui-ci vous sera communiqué sur votre boite mail.</p>
+                            <p> et vivre une expérience musicale sans précédent</p>
                             <!--<ul class="address">-->
                             <!--<li><i class="pe-7s-map-marker"></i><span>1600 Pennsylvania Ave NW,<br>Washington, DC 20500,<br>United States</span></li>-->
                             <!--<li><i class="pe-7s-mail"></i><span>example@gmail.com</span></li>-->
