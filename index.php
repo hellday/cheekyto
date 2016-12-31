@@ -1,47 +1,4 @@
-<?php
-if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 
-	$civilite = $_POST['civilité'];
-	$date = $_POST['date'];
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
-	$email = $_POST['email'];
-	$adresse = $_POST['adresse'];
-
-
-	try {
-		$bdd = new PDO('mysql:host=localhost;dbname=cheekyto;charset=utf8', 'root', '');
-		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	} catch (Exception $e) {
-		die('Erreur : ' . $e->getMessage());
-	}
-
-//	$reqsql = $bdd->prepare('INSERT INTO inscription_wait (civilité, date_naissance, nom, prénom, email, adresse ) VALUES (:civilite, :datenaissance, :nom, :prenom, :email, :adresse)');
-//	$reqsql->execute(array(
-//			'civilite' => $civilite,
-//			'datenaissance' => $date,
-//			'nom' => $nom,
-//			'prenom' => $prenom,
-//			'email' => $email,
-//			'adresse' => $adresse
-//	));
-
-	$reqsql = $bdd->prepare('INSERT INTO inscriptions (civilité, date_naissance, nom, prénom, email, adresse, status ) VALUES (:civilite, :datenaissance, :nom, :prenom, :email, :adresse, :status)');
-	$reqsql->execute(array(
-		'civilite' => $civilite,
-		'datenaissance' => $date,
-		'nom' => $nom,
-		'prenom' => $prenom,
-		'email' => $email,
-		'adresse' => $adresse,
-		'status' => "wait"
-	));
-
-
-}
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -79,7 +36,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 				<div class="container">
 					<div class="row">
 						<div class="entry-content">
-				            <p><span class="start-text"><b>26 Juin 2017</b></span></p>
+				            <p><span class="start-text"><b>du 26 au 30 Juin 2017</b></span></p>
 				            <h4 class="entry-title"><a href="#">Le Festival Privé Parisien</a></h4>
 
 				            <h5><span><b>Remplissez le formulaire d'inscription et rejoignez LE festival </b></span></h5>
@@ -145,8 +102,10 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 			</div>
 			<div class="about-part">
 			<div class="col-md-12">
-                <center><p>Créé par deux étudiants parisiens, Cheekyto est un festival de musique électronique dans un premier lieux qui a pour but de mettre en valeur la scène électronique française avec des grands noms de la musique mais aussi des découvertes et des surprises pour un public grandissant. <br>
+                <center><p>Créé par deux étudiants parisiens, Cheekyto est un festival unique de musique électronique dans un premier lieux qui a pour but de mettre en valeur la scène électronique française avec des grands noms de la musique mais aussi des découvertes et des surprises pour un public grandissant.Les Artistes se produisant gratuitement l'evenement ne peux t'acceuillir qu'un nombre restreint de personne. Alors si tu veux partciper à notre festival saisis ta chance et inscrit toi<br>
                     </p></center>
+                <br>
+                <br>
 			</div>
 
 
@@ -159,8 +118,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 				<section id="schedule" class="row">
 				<div class="title-start schedule-menu col-md-4 col-md-offset-4">
 				<br />
-					<h2>Events Schedule</h2>
-					<p class="sub-text text-center">Check out the event details</p>
+					<h2>Déroulement de l'évenement</h2>
 				</div>
 					<ul class="timeline">
 					    <li>
@@ -169,27 +127,25 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					        </div>
 					        <div class="timeline-panel">
 					            <div class="timeline-heading">
-					                <h4>1 er</h4>
+					                <h4>Jour 1</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Ouverture du Festival avec 4 artistes "French Touch" dans le cadre d'un soirée exceptionelle de 16:00 à 3:00 </p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+                                            Étienne de Crécy
 					                	</em> 
 					                	<em class="timeline-item">
-					                	Seats : 25
+                                            Alan Braxe
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+                                            Mr. Oizo
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+                                            Alan Braxe
 					                	</em>
-					                	<em class="timeline-item">
-					                	Duration : 5days
-					                	</em>
+
 
 					                </p>
 
@@ -204,27 +160,25 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					        </div>
 					        <div class="timeline-panel">
 					            <div class="timeline-heading">
-					                <h4>Event Two</h4>
+					                <h4>Jour 2</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">La Fête bas son plein avec 3 artiste emblematique de la culture électronique française et une suprise en fin de set avec comme programation une soirée sur les même horaire: 16:00 à 3:00</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+                                            Cassius
 					                	</em> 
 					                	<em class="timeline-item">
-					                	Seats : 25
+                                            Laurent Garnier
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	Mome
 					                	</em>
 					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
+					                	?????
 					                	</em>
-					                	<em class="timeline-item">
-					                	Duration : 5days
-					                	</em>
+
 
 					                </p>
 
@@ -239,26 +193,22 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					        </div>
 					        <div class="timeline-panel">
 					            <div class="timeline-heading">
-					                <h4>Event Three</h4>
+					                <h4>Jour 3</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Soirée exceptionnel avec non seulement 2 grand DJ mais aussi une scéne ouverte de 22:00 au lever du jour!!</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Flume
 					                	</em> 
 					                	<em class="timeline-item">
-					                	Seats : 25
+					                	Crayon
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	OPEN
 					                	</em>
-					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
-					                	</em>
-					                	<em class="timeline-item">
-					                	Duration : 5days
+
 					                	</em>
 
 					                </p>
@@ -273,27 +223,22 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					        </div>
 					        <div class="timeline-panel">
 					            <div class="timeline-heading">
-					                <h4>Event Four</h4>
+					                <h4>Jour 4</h4>
 					            </div>
 					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+					                <p class="timeline-desc col-md-6">Cérémonie de Cloture de notre festival avec comme théme les légendes électro! et une programmation d'exception de 20:00 à 6:00</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
-					                	 Venue : Adeleade
+					                	 Jean-Michel Jarre
 					                	</em> 
 					                	<em class="timeline-item">
-					                	Seats : 25
+					                	Daft Punk
 					                	</em>
 					                	<em class="timeline-item">
-					                	Ticket: $35 
+					                	Justice
 					                	</em>
-					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
-					                	</em>
-					                	<em class="timeline-item">
-					                	Duration : 5days
-					                	</em>
+					                	BreackBot
 
 					                </p>
 
@@ -302,75 +247,7 @@ if ((isset($_POST['email']) && !empty($_POST['email'])) ) {
 					        </div>
 					    </li>
 					    
-					    <li>
-					        <div class="timeline-badge">
-					          <a><i class="fa fa-circle" id=""></i></a>
-					        </div>
-					        <div class="timeline-panel">
-					            <div class="timeline-heading">
-					                <h4>Event Five</h4>
-					            </div>
-					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
-					                <p class="timeline-other col-md-6">
-					                	
-					                	<em class="timeline-item">
-					                	 Venue : Adeleade
-					                	</em> 
-					                	<em class="timeline-item">
-					                	Seats : 25
-					                	</em>
-					                	<em class="timeline-item">
-					                	Ticket: $35 
-					                	</em>
-					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
-					                	</em>
-					                	<em class="timeline-item">
-					                	Duration : 5days
-					                	</em>
-
-					                </p>
-
-					            </div>
-					            
-					        </div>
-					    </li>
-					    
-					    <li  class="timeline-inverted">
-					        <div class="timeline-badge">
-					          <a><i class="fa fa-circle" id=""></i></a>
-					        </div>
-					        <div class="timeline-panel">
-					            <div class="timeline-heading">
-					                <h4>Event Six</h4>
-					            </div>
-					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
-					                <p class="timeline-other col-md-6">
-					                	
-					                	<em class="timeline-item">
-					                	 Venue : Adeleade
-					                	</em> 
-					                	<em class="timeline-item">
-					                	Seats : 25
-					                	</em>
-					                	<em class="timeline-item">
-					                	Ticket: $35 
-					                	</em>
-					                	<em class="timeline-item">
-					                	Date : Feb-21-2014
-					                	</em>
-					                	<em class="timeline-item">
-					                	Duration : 5days
-					                	</em>
-
-					                </p>
-
-					            </div>
-					            
-					        </div>
-					    </li>
+					    <
 					    <li class="clearfix no-float"></li>
 					</ul>
 					
