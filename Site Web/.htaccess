@@ -1,0 +1,3 @@
+#Gestion des erreurs
+
+ErrorDocument 404 /cheekyto/404.php
